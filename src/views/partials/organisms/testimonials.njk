@@ -1,0 +1,18 @@
+<section class="gradient-bg py-5">
+    <div class="container pt-5 pb-3">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="testimonial-slider">
+                    {% for testimonial in testimonials %}
+                        <div class="testimonial-item">
+                            <div class="testimonial-item__inner">
+                                <p>“ {{ testimonial.text }} ”</p>
+                                <small>{{ testimonial.name }} </small>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

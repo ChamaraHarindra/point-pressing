@@ -1,0 +1,17 @@
+
+
+//fancy link
+
+@mixin link-color($color, $hoverColor) {
+  color: $color;
+
+  &:after {
+    background: $hoverColor;
+  }
+
+  &:hover,
+  &:active {
+    color: $hoverColor;
+    text-decoration: none;
+  }
+}

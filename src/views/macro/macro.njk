@@ -1,0 +1,189 @@
+{##########################################################################                                                            *
+# Navigation                                                                                                             *
+###########################################################################}
+
+{% macro navLink(link, nav, customClass='') %}
+    <li><a href="{{ link }}" class="{{ customClass }}">{{ nav }}</a></li>
+{% endmacro %}
+
+
+{##########################################################################                                                            *
+# Product Block                                                                                                            *
+###########################################################################}
+
+{% macro productBlock(img, title, price, target) %}
+    <div class="col-md-4">
+        <a class="full-img-info-block product-block linked mb-5" href="#" data-toggle="modal" data-target="#{{ target }}">
+            <div class="view"><i class="ri-link"></i></div>
+            <img src="./static/media/{{ img }}" alt="">
+            <div class="overlay overlay--dark-gradient"></div>
+            <div class="info">
+                <div>
+                    <h3>{{ title }}</h3>
+                    <span>{{ price }}</span>
+                </div>
+
+            </div>
+        </a>
+    </div>
+{% endmacro %}
+
+
+{##########################################################################                                                            *
+# product modal                                                                                                            *
+###########################################################################}
+
+{% macro productModal(id, label, title, img, radio1, radio2, price) %}
+    <div class="modal fade custom-modal" id="{{ id }}" tabindex="-1" aria-labelledby="{{ label }}" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+{#                    <h5 class="modal-title" id="{{ label }}">{{ title }}</h5>#}
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="ri-close-line"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="./static/media/{{ img }}" alt="" class="product-img">
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="mb-3">{{ title }}</h3>
+                                <div class="options">
+                                    <strong>Taille</strong>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline1">{{ radio1 }}</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline2">{{ radio2 }}</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="quantity">
+                                        <button><i class="ri-indeterminate-circle-line"></i></button>
+                                        <input type="text" class="form-control" value="1">
+                                        <button><i class="ri-add-circle-line"></i></button>
+                                    </div>
+                                    <div class="price">{{ price }} €</div>
+                                </div>
+                                <button class="button button--primary mt-5">Ajouter au chariot</button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+
+{##########################################################################                                                            *
+# modal                                                                                                            *
+###########################################################################}
+
+{% macro modal(id, label) %}
+    <div class="modal fade custom-modal" id="{{ id }}" tabindex="-1" aria-labelledby="{{ label }}" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    {#                    <h5 class="modal-title" id="{{ label }}">{{ title }}</h5>#}
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="ri-close-line"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                {{ caller () }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+
+
+{##########################################################################                                                            *
+# NCustom Checkbox                                                                                                             *
+###########################################################################}
+
+{% macro check(id, value) %}
+    <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="{{ id }}">
+        <label class="custom-control-label" for="{{ id }}">{{ value }}</label>
+    </div>
+{% endmacro %}
+
+{##########################################################################                                                            *
+# Image Info Block                                                                                                              *
+###########################################################################}
+
+{% macro imgInfoBlock(customClass = '', img, title, text) %}
+<div class="img-info-block {{ customClass }}">
+    <div class="img"><img src="./static/media/{{ img }}" alt=""></div>
+    <h4>
+        {{ title }}
+    </h4>
+    <p class="text-center">{{ text }}</p>
+</div>
+{% endmacro %}
+
+{##########################################################################                                                            *
+# Services                                                                                                             *
+###########################################################################}
+
+{% macro services(customClass = '', title, text) %}
+    <div class="img-info-block {{ customClass }}">
+        <h4>
+            {{ title }}
+        </h4>
+        <p class="text-center">{{ text | safe }}</p>
+    </div>
+{% endmacro %}
+
+
+{##########################################################################                                                            *
+# Full Image Info Block                                                                                                              *
+###########################################################################}
+
+{% macro fullImageInfoBlock(img, title, price) %}
+<div class="full-img-info-block">
+    <img src="./static/media/{{ img }}" alt="">
+    <div class="overlay overlay--dark-gradient"></div>
+    <div class="info">
+        <h3>{{ title }}</h3>
+        <span>{{ price }}</span>
+    </div>
+</div>
+{% endmacro %}
+
+{##########################################################################                                                            *
+# Blog                                                                                                             *
+###########################################################################}
+
+{% macro blog(banner, name='Candida Gibson', date='Jun 16, 2020', title='Le remboursement de votre appareillage auditif', text='La procédure à suivre pour l’obtention du remboursement de l’appareillage auditif
+                (RVAA) est la suivante...') %}
+    <div class="card blog-wrap">
+        <div class="img-wrap">
+            <img src="{{ banner }}" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+            <div class="blog-meta">
+                <img src="./static/media/user.png" alt="">
+                <span class="mr-3">{{ name }}</span>
+                <span class="mr-3">{{ date }}</span>
+            </div>
+            <h5 class="card-title">{{ title }}</h5>
+            <p class="card-text">{{ text }}</p>
+            <a href="./blog-post.html" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+{% endmacro %}

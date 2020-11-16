@@ -1,0 +1,48 @@
+body, html {
+  font-family: $default-font-family;
+  color: $default-font-color;
+  font-size: $default-font-size;
+  line-height: 1.6em;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $title-color;
+  font-weight: normal;
+}
+
+a {
+  &:active {
+    color: $primary-color;
+    transition: all ease-in 0.3s;
+  }
+
+  &:hover, &:focus {
+    text-decoration: none;
+    color: $secondary-color;
+    transition: all ease-out 0.3s;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+
+.mm-spn a {
+  text-align: center;
+  &.button {
+    @extend .button;
+    background-image: linear-gradient(to right, $primary-color 0%, $green-color 51%, $secondary-color 100%);
+  }
+}
+
+.options {
+  margin-bottom: 25px;
+  strong {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+

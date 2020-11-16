@@ -1,0 +1,267 @@
+{
+  "site": {
+    "title": "(site title)",
+    "description": "(site meta description)",
+    "baseUrl": "./"
+  },
+  "pages": {
+    "index": {
+      "title": "",
+      "description": "",
+      "stylesheets": [
+        "main"
+      ],
+      "scripts": [
+        "main"
+      ]
+    },
+    "about-index": {
+      "title": "(about title)",
+      "description": "(about meta description)",
+      "stylesheets": [
+        "main",
+        "about"
+      ],
+      "scripts": [
+        "main",
+        "about"
+      ]
+    }
+  },
+  "menus": {
+    "primary": [
+      {
+        "id": "index",
+        "path": "/",
+        "children": "Home"
+      },
+      {
+        "id": "about-index",
+        "path": "/about",
+        "children": "<i>About</i>"
+      }
+    ]
+  },
+  "heroSlider": [
+    {
+      "img": "slider-1",
+      "text": "Pickup de linge, commandez en ligne et recevez vous vêtements tous propres"
+    },
+    {
+      "img": "slider-1",
+      "text": "Pickup de linge, commandez en ligne et recevez vous vêtements tous propres"
+    },
+    {
+      "img": "slider-1",
+      "text": "Pickup de linge, commandez en ligne et recevez vous vêtements tous propres"
+    }
+  ],
+  "officeSlider": [
+    {
+      "img": 1
+    },
+    {
+      "img": 2
+    },
+    {
+      "img": 3
+    },
+    {
+      "img": 4
+    },
+    {
+      "img": 5
+    }
+  ],
+  "procedureGallery": [
+    {
+      "img": 1
+    },
+    {
+      "img": 2
+    },
+    {
+      "img": 3
+    },
+    {
+      "img": 4
+    },
+    {
+      "img": 5
+    },
+    {
+      "img": 6
+    },
+    {
+      "img": 7
+    },
+    {
+      "img": 8
+    }
+  ],
+  "boxInfo": [
+    {
+      "img": "candidate",
+      "heading": "30 ans d’expérience",
+      "text": "Nous soignons depuis de nombreuses des années des patients avec des résultats positifs"
+    },
+    {
+      "img": "job-interview",
+      "heading": "Approche individuelle",
+      "text": "Chaque client fait l’objet d’une attention personnelle"
+    },
+    {
+      "img": "stethoscope",
+      "heading": "Cabinet spécialisé",
+      "text": "Nous avons une multitude de spécialistes qui sont à même d’aider les patients en fonction de leurs besoins"
+    },
+    {
+      "img": "trees",
+      "heading": "Cadre verdoyant ",
+      "text": "Cabinet installé dans la partie verdoyante de la commune d’Uccle"
+    }
+  ],
+  "whyUs": [
+    {
+      "img": "doctor",
+      "heading": "Médecins qualifiés",
+      "text": "Notre équipe est composée uniquement de médecins spécialistes et reconnus dans leur domaine, et qui pratiquent dans les plus grands hôpitaux"
+    },
+    {
+      "img": "chip",
+      "heading": "Equipement de pointe",
+      "text": "Pour répondre aux besoins de nos clients, et afin de leur prodiguer les meilleurs traitements, le cabinet est équipé des dernières technologies disponibles"
+    },
+    {
+      "img": "job-interview",
+      "heading": "Approche individuelle",
+      "text": "Chaque patient est pris en charge d’une manière individuelle au sein du cabinet. Ainsi il pourra être facilement redirigé vers un autre spécialiste du cabinet"
+    },
+    {
+      "img": "alarm",
+      "heading": "Disponibilité immédiate",
+      "text": "Le cabinet est organisé de telle sorte qu’on puisse rapidement prendre en charge un patient. Chez Espace Tete et Corps vous aurez un rendez-vous rapidement."
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo doloreset ea rebum. Stet clita kasd gubergren, no sea",
+      "name": "Sasha Lopez",
+      "position": "Accountant from Brusells"
+    },
+    {
+      "id": 2,
+      "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. ",
+      "name": "John Doe",
+      "position": "Rapper from Brusells"
+    },
+    {
+      "id": 3,
+      "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. ",
+      "name": "Danny Smith",
+      "position": "Policeman from Brusells"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "img": "hearing",
+      "heading": "Essai d’appareils auditifs",
+      "text": "Salim Salman"
+    },
+    {
+      "id": 2,
+      "img": "speaking",
+      "heading": "Logopède",
+      "text": "Mathilde Vandekerckove"
+    },
+    {
+      "id": 3,
+      "img": "brain",
+      "heading": "Neurologie",
+      "text": "Eric Raucq"
+    },
+    {
+      "id": 4,
+      "img": "skin",
+      "heading": "Dermatologue",
+      "text": "Emmanuelle Steels"
+    },
+    {
+      "id": 5,
+      "img": "foot-print",
+      "heading": "Podologie",
+      "text": "Christophe Jacobs"
+    }
+  ],
+  "doctors": [
+    {
+      "id": 1,
+      "img": "dr-slim-portrait.png",
+      "heading": "Salim Salman",
+      "text": "Auditien"
+    },
+    {
+      "id": 2,
+      "img": "dr-mathilde-portrait.png",
+      "heading": "Mathilde Vandenkerckhove",
+      "text": "Logopède"
+    },
+    {
+      "id": 3,
+      "img": "1.png",
+      "heading": "Christophe Jacobs",
+      "text": "Podologie"
+    },
+    {
+      "id": 4,
+      "img": "2.png",
+      "heading": "Eric Raucq",
+      "text": "Neurologie"
+    },
+    {
+      "id": 5,
+      "img": "1.png",
+      "heading": "Emmanuelle Steels",
+      "text": "Dermatologue Docteur"
+    }
+  ],
+  "procedures": [
+    {
+      "id": "hyperkeratoses",
+      "title": "Hyperkératoses et cors",
+      "text": "Les hyperkeratoses seront abrasés à l’aide d’un bistouri et d’une meule électrique. Pour les cors, en plus d’enlever la couche cornée, il est indispensable d’aller chercher le cor et de l’extraire entièrement en allant chercher le plan de clivage à la limite du tissu sain."
+    },
+  {
+      "id": "onychomycose",
+      "title": "Onychomycose",
+      "text": "Le limage à la meule électrique va permettre d’éliminer la kératine infectée et mettre la traitement local au plus proche de l’infection."
+    },
+  {
+      "id": "onychogryphose",
+      "title": "Onychogryphose",
+      "text": "L’onychogryphose  est une hypertrophie et une incurvation de la plaque unguéale, la pression engendrée dans la chaussure, génère le chaussage."
+    },
+  {
+      "id": "onychocryptose",
+      "title": "Onychocryptose",
+      "text": "L’ongle sera, si nécessaire,  aminci dans un premier temps afin de faciliter le soulèvement des bords. Le traitement podologique débute par un dégagement des sillons péri-unguéaux."
+    },
+  {
+      "id": "orthonyxie",
+      "title": "Orthonyxie",
+      "text": "L’orthonyxie est une technique qui consiste à corriger la courbure de la plaque unguéale. Cette orthèse est principalement réalisée lorsque la forme de l’ongle entraîne des conflits entre la plaque unguéale et les tissus qui l’entoure."
+    },
+    {
+      "id": "orthoplastie",
+      "title": "Orthoplastie",
+      "text": "Une orthoplastie ou orthèse d’orteils est un appareil ou aide technique en silicone\t\t destinée à traiter une déformation d’orteils ainsi que ses conséquences, voire\t\t\t remplacer l’espace laissé libre par un ou plusieurs orteils manquants."
+    },
+    {
+      "id": "conseilsDeChaussage",
+      "title": "Education – Conseils de chaussage",
+      "text": "Malgré que le port de bonnes chaussures constitue la première exigence pour une marche normale, les gens ont tendance à se tourner vers de moins bonnes chaussures, surtout en raison de la mode ou de leur travail."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{% set title = 'Our Services' %}
+{% set ourServicesPage = true %}
+
+{% extends 'layouts/default.njk' %}
+{% import "macro/macro.njk" as Macro %}
+
+{% block content %}
+    <section class="sub-header">
+        <div class="overlay overlay--dark"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"><h1>Our Services</h1></div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>What We Do Best</h2>
+                    <h6 class="subtitle">Our Services</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    {{ Macro.services(
+                        'Aqua Nettoyage',
+                        'L’aquanettoyage (autrement nettoyage à l’eau, Wet cleaning ou Aquacleaning) permet de nettoyer tout type de textiles sans émettre de produits polluants, ce sur même les textiles les plus fragiles. Cette technique a été mise au point il y a déjà plus de 35 ans par les grands industriels du lavage textile.
+<br/><br/>A l’heure où le réchauffement climatique n’est plus un mythe et contrairement au nettoyage à sec, l’aquanettoyage est donc un procédé de nettoyage à l’eau utilisant des machines spécifiques et performantes qui permettent un lavage éco-responsable et économique. En effet, une machine de nettoyage à sec peut utiliser plusieurs centaines de litres d’eau tandis que l’aquanettoyage ne consomme que très peu de litres d’eau.'
+                    ) }}
+                </div>
+                <div class="col-md-6">
+                    {{ Macro.services(
+                        'Nettoyage de Basket',
+                        'L’aquanettoyage (autrement nettoyage à l’eau, Wet cleaning ou Aquacleaning) permet de nettoyer tout type de textiles sans émettre de produits polluants, ce sur même les textiles les plus fragiles. Cette technique a été mise au point il y a déjà plus de 35 ans par les grands industriels du lavage textile.
+<br/><br/>A l’heure où le réchauffement climatique n’est plus un mythe et contrairement au nettoyage à sec, l’aquanettoyage est donc un procédé de nettoyage à l’eau utilisant des machines spécifiques et performantes qui permettent un lavage éco-responsable et économique. En effet, une machine de nettoyage à sec peut utiliser plusieurs centaines de litres d’eau tandis que l’aquanettoyage ne consomme que très peu de litres d’eau.'
+                    ) }}
+                </div>
+
+            </div>
+        </div>
+    </section>
+{% endblock %}

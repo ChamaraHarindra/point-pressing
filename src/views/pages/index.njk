@@ -1,0 +1,160 @@
+{% set title = 'Home Page' %}
+{% set homePage = true %}
+
+{% extends 'layouts/default.njk' %}
+{% import "macro/macro.njk" as Macro %}
+
+{% block content %}
+    <section class="hero-slider-wrap">
+        <div class="hero-slider">
+            {% for sliders in heroSlider %}
+                <div class="hero-slider__item">
+                    <img src="{{ paths.root + paths.media }}/{{ sliders.img }}.jpg" alt="">
+                    <div class="slider-text">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 slider-text__inner">
+                                    {{ sliders.text }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="hero-arrows"></div>
+    </section>
+    <section class="why-choose-us py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Fournir des vêtements propres et une tranquillité d’esprit</h2>
+                    <h6 class="subtitle">POURQUOI NOUS CHOISIR</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    {{ Macro.imgInfoBlock(
+                        'professional-service.png',
+                        'Service professionnel',
+                        'Nous sommes un service de nettoyage à sec et de blanchisserie par livraison porte-à-porte suprême. Avec un minimum d’effort, vous choisissez une heure de prise en charge et de dépose.'
+                    ) }}
+                </div>
+                <div class="col-md-4">
+                    {{ Macro.imgInfoBlock(
+                        'fast-delivery.png',
+                        'Livraison rapide',
+                        'Nettoyage à sec de nuit et livraison de linge. Vos vêtements propres arriveront 24h après la prise en charge.'
+                    ) }}
+                </div>
+                <div class="col-md-4">
+                    {{ Macro.imgInfoBlock(
+                        'excellent-result.png',
+                        'Excellents résultats',
+                        'Nous fournissons des services de nettoyage à sec, de blanchisserie et de repassage de haute qualité à partir d’installations haut de gamme et prenons des commandes personnalisées'
+                    ) }}
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="process py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Des vêtements propres n’ont jamais été aussi faciles!</h2>
+                    <h6 class="subtitle">Comment ça fonctionne</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    {{ Macro.imgInfoBlock(
+                        customClass = 'with-icons',
+                        'how-1.png',
+                        'S’inscrire',
+                        'Appelez-nous et créez un compte pour profiter de tous les avantages'
+                    ) }}
+                </div>
+                <div class="col-md-3">
+                    {{ Macro.imgInfoBlock(
+                        customClass = 'with-icons',
+                        'how-2.png',
+                        'Ramasser',
+                        'Nous venons à votre porte et récupérons votre linge selon votre demande.'
+                    ) }}
+                </div>
+                <div class="col-md-3">
+                    {{ Macro.imgInfoBlock(
+                        customClass = 'with-icons',
+                        'how-3.png',
+                        'Nettoyage',
+                        'Nous utilisons des produits de haute qualité pour nettoyer votre linge.'
+                    ) }}
+                </div>
+                <div class="col-md-3">
+                    {{ Macro.imgInfoBlock(
+                        customClass = 'with-icons no-arrow',
+                        'how-4.png',
+                        'Livraison',
+                        'Nous livrons le linge fini À votre porte après vous en avoir informé.'
+                    ) }}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="shirt-works py-5">
+        <div class="container-fluid py-5 px-0">
+            <div class="row no-gutters">
+                <div class="col-md-6"></div>
+                <div class="col-md-6 ">
+                    <h3 class="mb-3 mt-4 mt-md-0">Service de chemise à partir de 2,80 € par chemise</h3>
+                    <a href="#" class="button mb-4 mb-md-0 button--lg button--white-bordered button--no-shadow">
+                        Voir la liste complète des prix
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pb-5 pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Prix abordables pour nos services</h2>
+                    <h6 class="subtitle">Combien ça coûte</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    {{ Macro.fullImageInfoBlock(
+                        'service-1.png',
+                        'Lessive à la pièce',
+                        'Dès 2,80 € par pièce'
+                    ) }}
+                </div>
+                <div class="col-md-4">
+                    {{ Macro.fullImageInfoBlock(
+                        'service-2.png',
+                        'Linge au poids',
+                        'Dès 2,80 € par pièce'
+                    ) }}
+                </div>
+                <div class="col-md-4">
+                    {{ Macro.fullImageInfoBlock(
+                        'service-3.png',
+                        'Linge d’ameublement',
+                        'Dès 2,80 € par pièce'
+                    ) }}
+                </div>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-4 py-3">
+                    <a href="#" class="button button--lg button--primary">Voir la liste complète des prix</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include 'partials/organisms/testimonials.njk' %}
+{% endblock %}

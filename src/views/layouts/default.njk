@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+<head>
+    {% include 'partials/organisms/head.njk' %}
+</head>
+<body>
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+{# Start Header Here #}
+{% include 'partials/organisms/header.njk' %}
+{# End Header #}
+
+{# Start Main Content Here #}
+<main>
+    {% block content %}{% endblock %}
+</main>
+{# End Main Content #}
+
+
+{# Start Footer Here #}
+{% include 'partials/organisms/footer.njk' %}
+{# End Footer #}
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mmenu-light@3.0.7/dist/mmenu-light.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="{{ paths.root + paths.scripts }}/main.js"></script>
+
+<script>
+    {% if homePage %}
+    $('.hero-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        appendArrows: $('.hero-arrows'),
+        prevArrow: '<button id="prev" type="button" class="hero-left"><i class="ri-arrow-left-s-line"></i></button>',
+        nextArrow: '<button id="next" type="button" class="hero-right"><i class="ri-arrow-right-s-line"></i></button>',
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+    {% endif %}
+
+    $('.testimonial-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+    });
+</script>
+</body>
+</html>

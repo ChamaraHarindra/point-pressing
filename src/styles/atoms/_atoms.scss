@@ -1,0 +1,276 @@
+/***************************************************************************                                                            *
+ * Logo                                                                                                               *
+ ***************************************************************************/
+
+.logo {
+  img {
+    height: 50px;
+  }
+}
+
+/***************************************************************************                                                            *
+ * Logo                                                                                                               *
+ ***************************************************************************/
+
+a {
+  color: $primary-color;
+  transition: all ease-in 0.2s;
+
+  &:hover {
+    color: $secondary-color;
+    transition: all ease-in 0.2s;
+  }
+}
+
+/***************************************************************************                                                            *
+ * Button                                                                                                              *
+ ***************************************************************************/
+.button {
+  display: flex;
+  padding: 12px 24px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  justify-content: center;
+  color: $white-color;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 100px;
+  border: none;
+
+  &:hover {
+    background-position: right center;
+    color: $white-color;
+  }
+
+  &--primary {
+    background-image: linear-gradient(to right, $primary-color 0%, $green-color 51%, $secondary-color 100%);
+  }
+
+  &--white-bordered {
+    background: none;
+    border: 1px solid $white-color;
+
+    &:hover {
+      color: $primary-color;
+      background: $white-color;
+    }
+  }
+
+  &--lg {
+    padding: 15px 40px;
+    text-transform: uppercase;
+  }
+
+  &--no-shadow {
+    box-shadow: none !important;
+  }
+}
+
+/***************************************************************************                                                            *
+ * h2
+ ***************************************************************************/
+h2 {
+  font-size: 45px;
+  line-height: 1.2em;
+  color: $title-color;
+  position: relative;
+  width: 100%;
+  text-align: center;
+
+  &:after {
+    content: ' ';
+    display: block;
+    width: 47%;
+    height: 1px;
+    margin: 0.8667em auto 0.7667em;
+    max-width: 270px;
+    background-color: #eaeaea;
+  }
+}
+
+/***************************************************************************                                                            *
+ * h6
+ ***************************************************************************/
+h6.subtitle {
+  font-size: $default-font-color;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 40px;
+  color: $primary-color;
+}
+
+/***************************************************************************                                                            *
+ * Gradient Background
+ ***************************************************************************/
+
+.gradient-bg {
+  background-image: $gradient-color;
+}
+
+
+/***************************************************************************                                                            *
+ * Overlay
+ ***************************************************************************/
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+
+  &--dark-gradient {
+    background-image: $dark-gradient-color;
+  }
+
+  &--dark {
+    background: rgba($black-color, 0.5);
+  }
+}
+
+/***************************************************************************                                                            *
+ * Copyrights
+ ***************************************************************************/
+
+.copyrights {
+  a {
+    color: $primary-color;
+  }
+}
+
+
+
+/***************************************************************************                                                            *
+ * Floating Labels
+ ***************************************************************************/
+
+.field-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.field-wrapper label {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-size: 11px;
+  color: lighten($default-font-color, 10%);
+  transition: all 0.1s linear;
+  opacity: 0;
+  visibility: hidden;
+  font-weight: bold;
+}
+
+.field-wrapper label.on {
+  color: $primary-color;
+}
+
+.field-wrapper label.show {
+  transform: translateY(-4px);
+  opacity: 1;
+  visibility: visible;
+}
+
+.form-control {
+  font-size: 14px;
+  padding: 0 15px 0;
+  height: 50px;
+  border: 1px solid #ced4da;
+  border-radius: 3px;
+  color: $default-font-color;
+
+  &:focus {
+    box-shadow: none;
+    border-color: $secondary-color;
+  }
+}
+
+.field-wrapper label.show + input {
+  padding-top: 20px;
+  //   transition: all ease-in 0.1s;
+}
+
+.field-wrapper textarea.form-control {
+  padding-top: 20px;
+  min-height: 100px !important;
+}
+
+.field-wrapper label.show + select {
+  padding-top: 15px;
+  //   transition: all ease-in 0.1s;
+}
+
+.field-wrapper .watermark {
+  color: #aaa;
+}
+
+
+/***************************************************************************                                                            *
+ * Custom Checkboxes
+ ***************************************************************************/
+
+.custom-control-input:checked~.custom-control-label::before {
+  border-color: $primary-color;
+  background-color: $primary-color;
+}
+
+.custom-control.custom-checkbox,
+.custom-control.custom-radio {
+  display: flex;
+  align-items: center;
+  margin: 0 0 10px;
+  min-height: 1.5rem;
+  padding-left: 2rem;
+}
+
+.custom-control-label {
+  line-height: 1.6;
+}
+
+.custom-control-label::before, .custom-control-label::after {
+  width: 1.4rem;
+  height: 1.4rem;
+  top: 0;
+  left: -2rem;
+}
+
+.custom-control-input:focus:not(:checked)~.custom-control-label::before {
+  border-color: $primary-color;
+}
+
+.custom-control-input:focus~.custom-control-label::before {
+  box-shadow: 0 0 0 0.2rem rgba($primary-color,.25);
+}
+
+/***************************************************************************                                                            *
+ * Custom modal
+ ***************************************************************************/
+
+.custom-modal {
+  .modal-header {
+    border: none;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  .modal-body {
+    padding-top: 0;
+
+    .product-img {
+      width: 90%;
+    }
+  }
+}
+
+.modal-center-title {
+  text-align: center;
+  font-size: 40px;
+  margin: 0 0 50px;
+  color: $title-color;
+}

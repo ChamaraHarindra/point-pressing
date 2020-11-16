@@ -1,0 +1,59 @@
+<footer>
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    {% include '../atoms/logo.njk' %}
+                    <p class="mt-5">
+                        Ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Ab
+                        illo inventore veritatis et quasi architecto. Ipsa quae ab illo inventore veritatis et quasi
+                        architecto beatae vitae dicta sunt explicabo.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Liens utiles</h3>
+                    <nav>
+                        <ul>
+                            {{ Macro.navLink('#', 'A Propos') }}
+                            {{ Macro.navLink('#', 'Services') }}
+                            {{ Macro.navLink('#', 'Blog') }}
+                            {{ Macro.navLink('#', 'Shop') }}
+                            {{ Macro.navLink('#', 'Contact') }}
+                            {{ Macro.navLink('#', 'Conditions') }}
+                            {{ Macro.navLink('#', 'Vie Privée') }}
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-4">
+                    <h3>Nous contacter</h3>
+                    <div class="phone-highlighted">
+                        <i class="ri-phone-fill"></i>
+                        <a href="tel:{{ info.sitePhone }}">{{ info.sitePhone }}</a>
+                    </div>
+                    <div class="footer-info">
+                        <i class="ri-map-pin-2-fill"></i>
+                        {{ info.siteAddress }}
+                    </div>
+                    <div class="footer-info">
+                        <i class="ri-mail-send-line"></i>
+                        <a href="mailto:{{ info.siteEmail }}">{{ info.siteEmail }}</a>
+                    </div>
+                    <div class="d-flex align-items-center mt-4">
+                        <a href="#" class="social-item"><i class="ri-facebook-fill"></i></a>
+                        <a href="#" class="social-item"><i class="ri-twitter-fill"></i></a>
+                        <a href="#" class="social-item"><i class="ri-instagram-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    {% include '../atoms/copyright.njk' %}
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,349 @@
+/***************************************************************************                                                            *
+ * Header Main                                                                                                               *
+ ***************************************************************************/
+
+header {
+
+  .header-bottom {
+    background: $white-color;
+    box-shadow: 0 2px 7px 0 rgba($black-color, 0.1);
+    transition: all ease-in 0.2s;
+
+    .logo {
+      transition: all ease-in 0.2s;
+
+      img {
+        transition: all ease-in 0.2s;
+      }
+    }
+  }
+
+  &.scrolling {
+    transition: all ease-in 0.2s;
+
+    .header-bottom {
+      position: fixed;
+      z-index: 5;
+      transition: all ease-in 0.2s;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+
+    .logo {
+      transition: all ease-in 0.2s;
+
+      img {
+        height: 35px !important;
+        transition: all ease-in 0.2s;
+      }
+    }
+
+  }
+}
+
+/***************************************************************************                                                            *
+ * Header Top                                                                                                               *
+ ***************************************************************************/
+
+.header-top-stripe {
+  padding: 10px 0;
+  background: rgba($gray-3, 0.1);
+
+   a {
+     color: $default-font-color;
+   }
+
+  .col-md-6 {
+    @media(max-width: 768px) {
+      text-align: center;
+    }
+
+    &:last-child {
+      .d-flex {
+        justify-content: center;
+        @media(min-width: 768px) {
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+
+  a:link {
+    color: $default-font-color;
+    font-weight: bold;
+    display: block;
+    margin-left: 15px;
+  }
+}
+
+/***************************************************************************                                                            *
+ * Header  Bottom                                                                                                               *
+ ***************************************************************************/
+
+.header-bottom {
+  padding: 25px 0;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.a.mobile-menu-trigger.d-md-none {
+  font-size: 30px;
+  color: $title-color;
+  font-weight: bold;
+}
+
+/***************************************************************************                                                            *
+ * Hero Slider                                                                                                              *
+ ***************************************************************************/
+
+.hero-slider-wrap {
+  position: relative;
+  height: calc(100vh - 144px);
+  overflow: hidden;
+
+  @media(max-width: 768px) {
+    height: 500px;
+  }
+
+  &:hover {
+    .hero-arrows {
+      button {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  }
+
+  .hero-slider {
+
+    img {
+      object-fit: cover;
+    }
+
+    &__item {
+      position: relative;
+      min-height: calc(100vh - 144px);;
+
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        min-height: calc(100vh - 144px);
+      }
+
+      &.slick-active {
+        .slider-text__inner {
+          opacity: 1;
+          transition: all ease-out 1.5s;
+          transform: translateY(0);
+        }
+      }
+
+      .slider-text {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        transform: translateY(-70%);
+        z-index: 3;
+
+        @media(max-width: 768px) {
+          transform: translateY(0);
+          top: 15%;
+          padding: 0 15px;
+        }
+
+        &__inner {
+          color: $white-color;
+          font-weight: 400;
+          font-size: 40px;
+          padding: 20px;
+          max-width: 780px;
+          line-height: 60px;
+          transition: all ease-in 1.5s;
+          transform: translateY(100px);
+          opacity: 0;
+
+          @media(max-width: 768px) {
+            font-size: 20px;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hero-arrows {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: calc(100% - 50px);
+  display: flex;
+  justify-content: space-between;
+  margin: 0 25px;
+
+  button {
+    background: rgba($white-color, 0.2);
+    color: $white-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    font-size: 50px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 100%;
+    transition: all ease-in 0.2s;
+    outline: none;
+    opacity: 0;
+
+    &.hero-left {
+      transform: translateX(-20px);
+    }
+
+    &.hero-right {
+      transform: translateX(20px);
+    }
+
+    &:hover {
+      transform: scale(1.2);
+      transition: all ease-in 0.2s;
+    }
+  }
+
+}
+
+
+/***************************************************************************                                                            *
+ * Shirt Works                                                                                                            *
+ ***************************************************************************/
+
+.shirt-works {
+  .col-md-6 {
+    &:first-child {
+      min-height: 250px;
+      background: url(#{$img-path}/shirt-service.png) center center no-repeat;
+      background-size: cover;
+    }
+
+    &:last-child {
+      background: $gradient-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 20px !important;
+      text-align: center;
+      flex-direction: column;
+
+      h3 {
+        color: $white-color;
+        line-height: 1.7;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+
+/***************************************************************************                                                            *
+ * Footer                                                                                                           *
+ ***************************************************************************/
+
+footer {
+  background: lighten($gray-1, 33%)
+}
+
+.footer-top {
+  padding: 60px 0;
+
+  h3 {
+    font-size: 22px;
+    margin: 0 0 30px;
+    padding: 0 0 20px;
+    border-bottom: 1px solid lighten($gray-1, 25%);
+
+    @media(max-width: 768px) {
+      margin-top: 35px;
+    }
+  }
+
+  .footer-info {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+
+    i {
+      color: $gray-1;
+      margin-right: 10px;
+    }
+
+    a {
+      color: $primary-color;
+    }
+  }
+
+  .phone-highlighted {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    i {
+      font-size: 30px;
+      margin-right: 15px;
+      //color: $secondary-color;
+    }
+
+    a {
+      font-size: 30px;
+      color: $primary-color;
+    }
+  }
+}
+
+.footer-bottom {
+  padding: 20px;
+  border-top: 1px solid lighten($gray-1, 25%);
+}
+
+
+/***************************************************************************                                                            *
+ * Toolbar                                                                                                           *
+ ***************************************************************************/
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  border-bottom: 1px solid lighten($gray-1, 28%);
+  margin-bottom: 30px;
+
+  @media(max-width: 768px) {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .sort {
+    display: flex;
+    align-items: center;
+
+    @media(max-width: 768px) {
+      margin: 20px 0 0;
+    }
+
+    label {
+      display: block;
+      margin-right: 20px;
+      white-space: nowrap;
+      color: $title-color;
+    }
+  }
+}

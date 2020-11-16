@@ -1,0 +1,70 @@
+{% set title = 'Shop' %}
+{% set shopPage = true %}
+
+{% extends 'layouts/default.njk' %}
+{% import "macro/macro.njk" as Macro %}
+
+{% block content %}
+    <section class="sub-header">
+        <div class="overlay overlay--dark"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"><h1>{{ title }}</h1></div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">Í
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3 class="mb-4">Category</h3>
+                    <div class="filters">
+                        {{  Macro.check('filter1', 'Blanchisserie') }}
+                        {{  Macro.check('filter2', 'A la pièce') }}
+                        {{  Macro.check('filter3', 'Ameublement') }}
+                        {{  Macro.check('filter4', 'Services de livraison') }}
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="toolbar">
+                        <div class="searchbar">
+                            <input class="form-control searchbar__input" type="text" name="search" placeholder="Search here">
+                        </div>
+                        <div class="sort">
+                            <label for="sort">Trier par:</label>
+                            <select name="" id="sort" class="form-control">
+                                <option value="">Most Relevant</option>
+                                <option value="">Price Low to High</option>
+                                <option value="">Price High to Low</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        {{ Macro.productBlock('product-1.jpg', 'Couvre lit', '18.00 €', 'modal1') }}
+                        {{ Macro.productBlock('product-2.jpg', 'Blouson', '9.50 €', 'modal1') }}
+                        {{ Macro.productBlock('product-3.jpg', 'Pantalon', '18.00 €', 'modal1') }}
+                        {{ Macro.productBlock('product-4.jpg', 'Chemise', '18.00 €', 'modal1') }}
+                        {{ Macro.productBlock('product-5.jpg', 'Chemise', '18.00 €', 'modal1') }}
+                        {{ Macro.productBlock('product-6.jpg', 'Edredon synthétique', '18.00 €', 'modal1') }}
+                        {{ Macro.productBlock('product-7.jpg', 'Voilage ou filet ( prix M2 )', '18.00 €', 'modal1') }}
+                        {{ Macro.productBlock('product-8.jpg', 'Tenture ( prix M2 )', '18.00 €', 'modal1') }}
+                        {{ Macro.productBlock('product-9.jpg', 'Store américain voile ( prix. M2 )', '18.00 €', 'modal1') }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{   Macro.productModal(
+        id = 'modal1',
+        label='modal1Label',
+        title='Couvre lit',
+        img = 'product-1.jpg',
+        radio1='1 personne',
+        radio2='2 personnes - +4.96 €',
+        price='18.00') }}
+
+
+
+{% endblock %}

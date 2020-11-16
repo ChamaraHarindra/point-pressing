@@ -1,0 +1,19 @@
+@import 'variables';
+@import 'mixins';
+
+// organisms styles
+@import 'atoms/atoms';
+
+// organisms styles
+@import 'molecules/molecules';
+
+// organisms styles
+@import 'organisms/organisms';
+
+// vendor styles
+@import 'slick';
+@import 'slick-theme';
+
+// base styles
+@import 'base';
+

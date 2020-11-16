@@ -1,0 +1,34 @@
+{% set title = 'Blog' %}
+{% set blogPage = true %}
+
+{% extends 'layouts/default.njk' %}
+{% import "macro/macro.njk" as Macro %}
+
+{% block content %}
+    <section class="sub-header">
+        <div class="overlay overlay--dark"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"><h1>{{ title }}</h1></div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">Í
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    {{ Macro.blog('https://img.freepik.com/free-photo/portrait-smiling-man-with-stack-shirts-ironing_329181-643.jpg?size=626&ext=jpg&ga=GA1.2.236857713.1603651024') }}
+                </div>
+                <div class="col-md-6">
+                    {{ Macro.blog('https://img.freepik.com/free-photo/portrait-energetic-positive-cute-female-looking-directly-camera-with-happiness_176532-9138.jpg?size=626&ext=jpg&ga=GA1.2.236857713.1603651024') }}
+                </div>
+                <div class="col-md-6">
+                    {{ Macro.blog('https://img.freepik.com/free-photo/mother-with-daughter-doing-laundry-self-serviece-laundrette_1303-19547.jpg?size=626&ext=jpg&ga=GA1.2.236857713.1603651024') }}
+                </div>
+                <div class="col-md-6">
+                    {{ Macro.blog('https://img.freepik.com/free-photo/smiling-asian-woman-holding-clean-folded-clothes-home_1262-18067.jpg?size=626&ext=jpg&ga=GA1.2.236857713.1603651024') }}
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

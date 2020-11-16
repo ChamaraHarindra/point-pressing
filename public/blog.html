@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+<head>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Point Pressing - Blog</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/mmenu-light@3.0.7/dist/mmenu-light.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/styles/main.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<header>
+    <section class="header-top-stripe">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                We are open Tuesdays & Fridays 8am - 2pm
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex align-items-center">
+                    2 582 96 29
+                    <a href="#" data-toggle="modal" data-target="#login">
+                        <i class="ri-user-line"></i>
+                        Login
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="modal fade custom-modal" id="login" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div id="login">
+                                <div class="modal-center-title">Login</div>
+                                <form action="" >
+                                    <div class="field-wrapper">
+                                        <label for="email" class="">Username</label>
+                                        <input type="email" placeholder="Username" name="email" required="required"
+                                               class="form-control">
+                                    </div>
+                                    <div class="field-wrapper">
+                                        <label for="password" class="">Password</label>
+                                        <input type="password" placeholder="Password" name="email" required="required"
+                                               class="form-control">
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <button class="button button--primary button--lg">
+                                            Login
+                                        </button>
+                                        <a href="#" id="forgotLink">Forgot password</a>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="forgotPw" style="display:  none">
+                                <div class="modal-center-title">Forgot Password?</div>
+                                <form action="">
+                                    <p class="text-center">Type in your email to receive a reset password link</p>
+                                    <div class="field-wrapper">
+                                        <label for="email" class="">Your Email</label>
+                                        <input type="email" placeholder="Username" name="email" required="required"
+                                               class="form-control">
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <button class="button button--primary button--lg">
+                                            Send Reset Link
+                                        </button>
+                                        <a href="#" id="back">Back to Login</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('#login').on('click',' #forgotLink', function() {
+            $(this).closest('#login').hide();
+            $('#forgotPw').addClass('d-block');
+
+        })
+
+        $('#back').on('click', function() {
+            $('#forgotPw').removeClass('d-block');
+            $(this).closest('#login').show();
+        })
+    </script>
+</div>
+    <section class="header-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header-bottom__inner">
+                        <div class="logo">
+    <img src="/static/media/logo.png" alt="">
+</div>                        <a href="#headerNav" class="mobile-menu-trigger d-md-none">
+                            <i class="ri-menu-4-fill"></i>
+                        </a>
+                        <nav class="header-nav" id="headerNav">
+    <ul>
+            <li><a href="./" class="">A Propos</a></li>
+
+            <li><a href="our-services.html" class="">Services</a></li>
+
+            <li><a href="blog.html" class="">Blog</a></li>
+
+            <li><a href="contact.html" class="">Contact</a></li>
+
+            <li><a href="shop.html" class="button button--primary py-2 mr-0">Shop</a></li>
+
+    </ul>
+</nav>                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+
+
+<main>
+        <section class="sub-header">
+        <div class="overlay overlay--dark"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"><h1>Blog</h1></div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">Í
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                        <div class="card blog-wrap">
+        <div class="img-wrap">
+            <img src="https://img.freepik.com/free-photo/portrait-smiling-man-with-stack-shirts-ironing_329181-643.jpg?size=626&amp;ext=jpg&amp;ga=GA1.2.236857713.1603651024" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+            <div class="blog-meta">
+                <img src="./static/media/user.png" alt="">
+                <span class="mr-3">Candida Gibson</span>
+                <span class="mr-3">Jun 16, 2020</span>
+            </div>
+            <h5 class="card-title">Le remboursement de votre appareillage auditif</h5>
+            <p class="card-text">La procédure à suivre pour l’obtention du remboursement de l’appareillage auditif
+                (RVAA) est la suivante...</p>
+            <a href="./blog-post.html" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+
+                </div>
+                <div class="col-md-6">
+                        <div class="card blog-wrap">
+        <div class="img-wrap">
+            <img src="https://img.freepik.com/free-photo/portrait-energetic-positive-cute-female-looking-directly-camera-with-happiness_176532-9138.jpg?size=626&amp;ext=jpg&amp;ga=GA1.2.236857713.1603651024" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+            <div class="blog-meta">
+                <img src="./static/media/user.png" alt="">
+                <span class="mr-3">Candida Gibson</span>
+                <span class="mr-3">Jun 16, 2020</span>
+            </div>
+            <h5 class="card-title">Le remboursement de votre appareillage auditif</h5>
+            <p class="card-text">La procédure à suivre pour l’obtention du remboursement de l’appareillage auditif
+                (RVAA) est la suivante...</p>
+            <a href="./blog-post.html" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+
+                </div>
+                <div class="col-md-6">
+                        <div class="card blog-wrap">
+        <div class="img-wrap">
+            <img src="https://img.freepik.com/free-photo/mother-with-daughter-doing-laundry-self-serviece-laundrette_1303-19547.jpg?size=626&amp;ext=jpg&amp;ga=GA1.2.236857713.1603651024" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+            <div class="blog-meta">
+                <img src="./static/media/user.png" alt="">
+                <span class="mr-3">Candida Gibson</span>
+                <span class="mr-3">Jun 16, 2020</span>
+            </div>
+            <h5 class="card-title">Le remboursement de votre appareillage auditif</h5>
+            <p class="card-text">La procédure à suivre pour l’obtention du remboursement de l’appareillage auditif
+                (RVAA) est la suivante...</p>
+            <a href="./blog-post.html" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+
+                </div>
+                <div class="col-md-6">
+                        <div class="card blog-wrap">
+        <div class="img-wrap">
+            <img src="https://img.freepik.com/free-photo/smiling-asian-woman-holding-clean-folded-clothes-home_1262-18067.jpg?size=626&amp;ext=jpg&amp;ga=GA1.2.236857713.1603651024" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+            <div class="blog-meta">
+                <img src="./static/media/user.png" alt="">
+                <span class="mr-3">Candida Gibson</span>
+                <span class="mr-3">Jun 16, 2020</span>
+            </div>
+            <h5 class="card-title">Le remboursement de votre appareillage auditif</h5>
+            <p class="card-text">La procédure à suivre pour l’obtention du remboursement de l’appareillage auditif
+                (RVAA) est la suivante...</p>
+            <a href="./blog-post.html" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+
+<footer>
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="logo">
+    <img src="/static/media/logo.png" alt="">
+</div>                    <p class="mt-5">
+                        Ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Ab
+                        illo inventore veritatis et quasi architecto. Ipsa quae ab illo inventore veritatis et quasi
+                        architecto beatae vitae dicta sunt explicabo.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Liens utiles</h3>
+                    <nav>
+                        <ul>
+                                <li><a href="#" class="">A Propos</a></li>
+
+                                <li><a href="#" class="">Services</a></li>
+
+                                <li><a href="#" class="">Blog</a></li>
+
+                                <li><a href="#" class="">Shop</a></li>
+
+                                <li><a href="#" class="">Contact</a></li>
+
+                                <li><a href="#" class="">Conditions</a></li>
+
+                                <li><a href="#" class="">Vie Privée</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-4">
+                    <h3>Nous contacter</h3>
+                    <div class="phone-highlighted">
+                        <i class="ri-phone-fill"></i>
+                        <a href="tel:2 582 96 29">2 582 96 29</a>
+                    </div>
+                    <div class="footer-info">
+                        <i class="ri-map-pin-2-fill"></i>
+                        Rue de Livourne 9, 1060 Saint-Gilles, Belgium
+                    </div>
+                    <div class="footer-info">
+                        <i class="ri-mail-send-line"></i>
+                        <a href="mailto:info@pointpressing.be">info@pointpressing.be</a>
+                    </div>
+                    <div class="d-flex align-items-center mt-4">
+                        <a href="#" class="social-item"><i class="ri-facebook-fill"></i></a>
+                        <a href="#" class="social-item"><i class="ri-twitter-fill"></i></a>
+                        <a href="#" class="social-item"><i class="ri-instagram-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyrights">
+    Copyright ©
+    <script>document.write((new Date).getFullYear())</script>
+    All rights reserved | Crafted with <i class="ri-heart-fill" style="color: red"></i> by
+    <a href="https://www.brusselslife.be/" target="_blank" class="fancy">Brussels Life</a>
+</div>
+</div>                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mmenu-light@3.0.7/dist/mmenu-light.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="/static/scripts/main.js"></script>
+
+<script>
+    
+    $('.testimonial-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+    });
+</script>
+</body>
+</html>

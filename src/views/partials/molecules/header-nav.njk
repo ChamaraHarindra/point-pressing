@@ -1,0 +1,10 @@
+{% import "macro/macro.njk" as Macro %}
+<nav class="header-nav" id="headerNav">
+    <ul>
+        {{ Macro.navLink('./', 'A Propos') }}
+        {{ Macro.navLink('our-services.html', 'Services') }}
+        {{ Macro.navLink('blog.html', 'Blog') }}
+        {{ Macro.navLink('contact.html', 'Contact') }}
+        {{ Macro.navLink('shop.html', 'Shop', 'button button--primary py-2 mr-0') }}
+    </ul>
+</nav>
