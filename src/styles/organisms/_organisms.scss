@@ -153,8 +153,7 @@ header {
         z-index: 3;
 
         @media(max-width: 768px) {
-          transform: translateY(0);
-          top: 15%;
+
           padding: 0 15px;
         }
 
@@ -170,7 +169,7 @@ header {
           opacity: 0;
 
           @media(max-width: 768px) {
-            font-size: 20px;
+            font-size: 30px;
             line-height: 1.5;
           }
         }
@@ -322,8 +321,9 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 25px;
-  border-bottom: 1px solid lighten($gray-1, 28%);
+  padding: 20px;
+  background: #00b19d1c;
+  border-radius: 3px;
   margin-bottom: 30px;
 
   @media(max-width: 768px) {
@@ -344,6 +344,86 @@ footer {
       margin-right: 20px;
       white-space: nowrap;
       color: $title-color;
+    }
+  }
+}
+
+/***************************************************************************                                                            *
+ * Service on Phone                                                                                                          *
+ ***************************************************************************/
+
+.mobile-section {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: url(#{$img-path}/young-lady-with-a-phone.jpg) right center no-repeat;
+  background-size: cover;
+
+  .container {
+    z-index: 4;
+
+    h3, p {
+      color: $white-color;
+    }
+
+    h3 {
+      font-size: 45px;
+      margin-bottom: 30px;
+
+    }
+
+    p {
+      line-height: 1.8;
+    }
+  }
+}
+
+
+.price-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+
+
+  li {
+    display: flex;
+    flex: 1 1 50%;
+    max-width: 50%;
+    padding: 20px 20px;
+    border-bottom: solid 1px lighten($gray-1, 28%);
+    justify-content: space-between;
+    align-items: center;
+
+    &:hover {
+      background: rgba($primary-color, 0.07);
+    }
+
+    @media(max-width: 768px) {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+
+    &:nth-of-type(odd) {
+      padding-right: 40px;
+    }
+
+    &:nth-of-type(even) {
+      padding-right: 40px;
+    }
+
+    .price-list__price {
+      font-weight: bold;
+    }
+
+
+
+    &:last-child {
+      margin-right: auto;
     }
   }
 }

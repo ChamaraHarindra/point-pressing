@@ -78,6 +78,10 @@ h2 {
   width: 100%;
   text-align: center;
 
+  @media(max-width: 768px) {
+    font-size: 35px;
+  }
+
   &:after {
     content: ' ';
     display: block;
@@ -274,3 +278,4 @@ h6.subtitle {
   margin: 0 0 50px;
   color: $title-color;
 }
+

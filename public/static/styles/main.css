@@ -87,6 +87,12 @@ h2, .img-info-block h4 {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  h2, .img-info-block h4 {
+    font-size: 35px;
+  }
+}
+
 h2:after, .img-info-block h4:after {
   content: ' ';
   display: block;
@@ -436,6 +442,21 @@ nav ul a.active {
   position: relative;
   overflow: hidden;
   display: block;
+  border-radius: 3px;
+}
+
+.full-img-info-block.product-block .info {
+  padding: 15px 20px;
+  background: rgba(0, 168, 162, 0.5);
+  border-radius: 3px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+.full-img-info-block.product-block .info h3 {
+  color: #ffffff;
+  font-size: 16px;
 }
 
 .full-img-info-block.product-block .view {
@@ -930,10 +951,6 @@ header.scrolling .logo img {
 
 @media (max-width: 768px) {
   .hero-slider-wrap .hero-slider__item .slider-text {
-    -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0);
-    top: 15%;
     padding: 0 15px;
   }
 }
@@ -955,7 +972,7 @@ header.scrolling .logo img {
 
 @media (max-width: 768px) {
   .hero-slider-wrap .hero-slider__item .slider-text__inner {
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1.5;
   }
 }
@@ -1139,8 +1156,9 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 25px;
-  border-bottom: 1px solid #ececec;
+  padding: 20px;
+  background: #00b19d1c;
+  border-radius: 3px;
   margin-bottom: 30px;
 }
 
@@ -1175,6 +1193,98 @@ footer {
   margin-right: 20px;
   white-space: nowrap;
   color: #414141;
+}
+
+/***************************************************************************                                                            *
+ * Service on Phone                                                                                                          *
+ ***************************************************************************/
+.mobile-section {
+  width: 100%;
+  min-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background: url(../media/young-lady-with-a-phone.jpg) right center no-repeat;
+  background-size: cover;
+}
+
+.mobile-section .container {
+  z-index: 4;
+}
+
+.mobile-section .container h3, .mobile-section .container p {
+  color: #ffffff;
+}
+
+.mobile-section .container h3 {
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+
+.mobile-section .container p {
+  line-height: 1.8;
+}
+
+.price-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.price-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  max-width: 50%;
+  padding: 20px 20px;
+  border-bottom: solid 1px #ececec;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price-list li:hover {
+  background: rgba(0, 168, 162, 0.07);
+}
+
+@media (max-width: 768px) {
+  .price-list li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+.price-list li:nth-of-type(odd) {
+  padding-right: 40px;
+}
+
+.price-list li:nth-of-type(even) {
+  padding-right: 40px;
+}
+
+.price-list li .price-list__price {
+  font-weight: bold;
+}
+
+.price-list li:last-child {
+  margin-right: auto;
 }
 
 /* Slider */
@@ -1494,6 +1604,30 @@ img {
   font-weight: bold;
   display: block;
   margin-bottom: 15px;
+}
+
+.page-link {
+  color: #00A8A2;
+}
+
+.page-item.active span.page-link {
+  background: #00A8A2;
+  color: #ffffff !important;
+  margin-right: 10px;
+  display: block;
+  border-color: #00A8A2;
+}
+
+.nav .nav-link {
+  color: #00A8A2;
+  border-radius: 3px;
+  padding: 12px 20px;
+}
+
+.nav .nav-link.active {
+  background: #00A8A2;
+  color: #ffffff;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=main.css.map */

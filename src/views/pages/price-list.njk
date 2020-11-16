@@ -1,0 +1,41 @@
+{% set title = 'Price List' %}
+{% set priceListpage = true %}
+
+{% extends 'layouts/default.njk' %}
+{% import "macro/macro.njk" as Macro %}
+
+{% block content %}
+    <section class="sub-header">
+        <div class="overlay overlay--dark"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"><h1>{{ title }}</h1></div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="price-list">
+                        {% for price in priceList %}
+                        <li>
+                            <div class="price-list__item">{{ price.item }}</div>
+                            <div class="price-list__price">{{ price.price }}</div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-3 py-3">
+                    <a href="shop.html" class="button button--lg button--primary">Shop Now</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="map">
+
+    </section>
+{% endblock %}

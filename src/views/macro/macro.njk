@@ -112,7 +112,7 @@
 
 
 {##########################################################################                                                            *
-# NCustom Checkbox                                                                                                             *
+# Custom Checkbox                                                                                                             *
 ###########################################################################}
 
 {% macro check(id, value) %}
@@ -132,7 +132,7 @@
     <h4>
         {{ title }}
     </h4>
-    <p class="text-center">{{ text }}</p>
+    <p class="text-center">{{ text | safe }}</p>
 </div>
 {% endmacro %}
 

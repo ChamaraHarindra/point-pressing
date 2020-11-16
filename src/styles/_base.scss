@@ -46,3 +46,33 @@ img {
   }
 }
 
+.page-link {
+  color: $primary-color ;
+}
+
+.page-item {
+  &.active {
+    span.page-link {
+      background: $primary-color;
+      color: $white-color !important;
+      margin-right: 10px;
+      display: block;
+      border-color: $primary-color;
+    }
+  }
+}
+
+.nav {
+  .nav-link {
+    color: $primary-color;
+    border-radius: 3px;
+    padding: 12px 20px;
+
+    &.active {
+      background: $primary-color;
+      color: $white-color;
+      font-weight: bold;
+    }
+  }
+}
+

@@ -56,93 +56,6 @@
       "text": "Pickup de linge, commandez en ligne et recevez vous vêtements tous propres"
     }
   ],
-  "officeSlider": [
-    {
-      "img": 1
-    },
-    {
-      "img": 2
-    },
-    {
-      "img": 3
-    },
-    {
-      "img": 4
-    },
-    {
-      "img": 5
-    }
-  ],
-  "procedureGallery": [
-    {
-      "img": 1
-    },
-    {
-      "img": 2
-    },
-    {
-      "img": 3
-    },
-    {
-      "img": 4
-    },
-    {
-      "img": 5
-    },
-    {
-      "img": 6
-    },
-    {
-      "img": 7
-    },
-    {
-      "img": 8
-    }
-  ],
-  "boxInfo": [
-    {
-      "img": "candidate",
-      "heading": "30 ans d’expérience",
-      "text": "Nous soignons depuis de nombreuses des années des patients avec des résultats positifs"
-    },
-    {
-      "img": "job-interview",
-      "heading": "Approche individuelle",
-      "text": "Chaque client fait l’objet d’une attention personnelle"
-    },
-    {
-      "img": "stethoscope",
-      "heading": "Cabinet spécialisé",
-      "text": "Nous avons une multitude de spécialistes qui sont à même d’aider les patients en fonction de leurs besoins"
-    },
-    {
-      "img": "trees",
-      "heading": "Cadre verdoyant ",
-      "text": "Cabinet installé dans la partie verdoyante de la commune d’Uccle"
-    }
-  ],
-  "whyUs": [
-    {
-      "img": "doctor",
-      "heading": "Médecins qualifiés",
-      "text": "Notre équipe est composée uniquement de médecins spécialistes et reconnus dans leur domaine, et qui pratiquent dans les plus grands hôpitaux"
-    },
-    {
-      "img": "chip",
-      "heading": "Equipement de pointe",
-      "text": "Pour répondre aux besoins de nos clients, et afin de leur prodiguer les meilleurs traitements, le cabinet est équipé des dernières technologies disponibles"
-    },
-    {
-      "img": "job-interview",
-      "heading": "Approche individuelle",
-      "text": "Chaque patient est pris en charge d’une manière individuelle au sein du cabinet. Ainsi il pourra être facilement redirigé vers un autre spécialiste du cabinet"
-    },
-    {
-      "img": "alarm",
-      "heading": "Disponibilité immédiate",
-      "text": "Le cabinet est organisé de telle sorte qu’on puisse rapidement prendre en charge un patient. Chez Espace Tete et Corps vous aurez un rendez-vous rapidement."
-    }
-  ],
   "testimonials": [
     {
       "id": 1,
@@ -163,105 +76,76 @@
       "position": "Policeman from Brusells"
     }
   ],
-  "services": [
+  "priceList": [
     {
-      "id": 1,
-      "img": "hearing",
-      "heading": "Essai d’appareils auditifs",
-      "text": "Salim Salman"
+      "item": "Shirt",
+      "price": "€ 3.65"
     },
     {
-      "id": 2,
-      "img": "speaking",
-      "heading": "Logopède",
-      "text": "Mathilde Vandekerckove"
+      "item": "Skirt",
+      "price": "€ 5.90"
     },
     {
-      "id": 3,
-      "img": "brain",
-      "heading": "Neurologie",
-      "text": "Eric Raucq"
+      "item": "Fold shirt",
+      "price": "€ 3.65"
     },
     {
-      "id": 4,
-      "img": "skin",
-      "heading": "Dermatologue",
-      "text": "Emmanuelle Steels"
+      "item": "Jacket",
+      "price": "€ 7.00"
     },
     {
-      "id": 5,
-      "img": "foot-print",
-      "heading": "Podologie",
-      "text": "Christophe Jacobs"
-    }
-  ],
-  "doctors": [
-    {
-      "id": 1,
-      "img": "dr-slim-portrait.png",
-      "heading": "Salim Salman",
-      "text": "Auditien"
+      "item": "Blouse",
+      "price": "€ 5.90"
     },
     {
-      "id": 2,
-      "img": "dr-mathilde-portrait.png",
-      "heading": "Mathilde Vandenkerckhove",
-      "text": "Logopède"
+      "item": "Sweater",
+      "price": "€ 5.00"
     },
     {
-      "id": 3,
-      "img": "1.png",
-      "heading": "Christophe Jacobs",
-      "text": "Podologie"
+      "item": "Trousers",
+      "price": "€ 6.00"
     },
     {
-      "id": 4,
-      "img": "2.png",
-      "heading": "Eric Raucq",
-      "text": "Neurologie"
+      "item": "2pc suit / tailor",
+      "price": "€ 13.10"
     },
     {
-      "id": 5,
-      "img": "1.png",
-      "heading": "Emmanuelle Steels",
-      "text": "Dermatologue Docteur"
-    }
-  ],
-  "procedures": [
-    {
-      "id": "hyperkeratoses",
-      "title": "Hyperkératoses et cors",
-      "text": "Les hyperkeratoses seront abrasés à l’aide d’un bistouri et d’une meule électrique. Pour les cors, en plus d’enlever la couche cornée, il est indispensable d’aller chercher le cor et de l’extraire entièrement en allant chercher le plan de clivage à la limite du tissu sain."
-    },
-  {
-      "id": "onychomycose",
-      "title": "Onychomycose",
-      "text": "Le limage à la meule électrique va permettre d’éliminer la kératine infectée et mettre la traitement local au plus proche de l’infection."
-    },
-  {
-      "id": "onychogryphose",
-      "title": "Onychogryphose",
-      "text": "L’onychogryphose  est une hypertrophie et une incurvation de la plaque unguéale, la pression engendrée dans la chaussure, génère le chaussage."
-    },
-  {
-      "id": "onychocryptose",
-      "title": "Onychocryptose",
-      "text": "L’ongle sera, si nécessaire,  aminci dans un premier temps afin de faciliter le soulèvement des bords. Le traitement podologique débute par un dégagement des sillons péri-unguéaux."
-    },
-  {
-      "id": "orthonyxie",
-      "title": "Orthonyxie",
-      "text": "L’orthonyxie est une technique qui consiste à corriger la courbure de la plaque unguéale. Cette orthèse est principalement réalisée lorsque la forme de l’ongle entraîne des conflits entre la plaque unguéale et les tissus qui l’entoure."
+      "item": "jeans / cotton pants",
+      "price": "€ 4.90"
     },
     {
-      "id": "orthoplastie",
-      "title": "Orthoplastie",
-      "text": "Une orthoplastie ou orthèse d’orteils est un appareil ou aide technique en silicone\t\t destinée à traiter une déformation d’orteils ainsi que ses conséquences, voire\t\t\t remplacer l’espace laissé libre par un ou plusieurs orteils manquants."
+      "item": "3pc suit",
+      "price": "€ 19.00"
     },
     {
-      "id": "conseilsDeChaussage",
-      "title": "Education – Conseils de chaussage",
-      "text": "Malgré que le port de bonnes chaussures constitue la première exigence pour une marche normale, les gens ont tendance à se tourner vers de moins bonnes chaussures, surtout en raison de la mode ou de leur travail."
+      "item": "Suit vest ",
+      "price": "€ 5.60"
+    },
+    {
+      "item": "Simple dress",
+      "price": "€ 8.90"
+    },
+    {
+      "item": "Evening dress",
+      "price": "€ 18.00"
+    },{
+      "item": "Anorak",
+      "price": "€ 9.50"
+    },{
+      "item": "Coats",
+      "price": "€ 13.50"
+    },{
+      "item": "Raincoat",
+      "price": "€ 12.90"
+    },{
+      "item": "Tie / bow tie",
+      "price": "€ 3.65"
+    },{
+      "item": "Cap",
+      "price": "€ 4.90"
+    },{
+      "item": "T-shirts",
+      "price": "€ 19.00"
     }
   ]
 }

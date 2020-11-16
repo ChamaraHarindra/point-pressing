@@ -18,11 +18,17 @@
             <div class="row">
                 <div class="col-md-3">
                     <h3 class="mb-4">Category</h3>
-                    <div class="filters">
-                        {{  Macro.check('filter1', 'Blanchisserie') }}
-                        {{  Macro.check('filter2', 'A la pièce') }}
-                        {{  Macro.check('filter3', 'Ameublement') }}
-                        {{  Macro.check('filter4', 'Services de livraison') }}
+                    <div class="filters mr-md-4">
+                        <nav class="nav flex-column">
+                            <a class="nav-link active" href="#">Blanchisserie</a>
+                            <a class="nav-link" href="#">A la pièce</a>
+                            <a class="nav-link" href="#">Ameublement</a>
+                            <a class="nav-link" href="#">Services de livraison</a>
+                        </nav>
+{#                        {{  Macro.check('filter1', 'Blanchisserie') }}#}
+{#                        {{  Macro.check('filter2', 'A la pièce') }}#}
+{#                        {{  Macro.check('filter3', 'Ameublement') }}#}
+{#                        {{  Macro.check('filter4', 'Services de livraison') }}#}
                     </div>
                 </div>
                 <div class="col-md-9">
@@ -36,6 +42,8 @@
                                 <option value="">Most Relevant</option>
                                 <option value="">Price Low to High</option>
                                 <option value="">Price High to Low</option>
+                                <option value="">Name: A to Z</option>
+                                <option value="">Name: Z to A</option>
                             </select>
                         </div>
                     </div>
@@ -50,6 +58,23 @@
                         {{ Macro.productBlock('product-7.jpg', 'Voilage ou filet ( prix M2 )', '18.00 €', 'modal1') }}
                         {{ Macro.productBlock('product-8.jpg', 'Tenture ( prix M2 )', '18.00 €', 'modal1') }}
                         {{ Macro.productBlock('product-9.jpg', 'Store américain voile ( prix. M2 )', '18.00 €', 'modal1') }}
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                    </li>
+                                    <li class="page-item active"><span class="page-link">1</span></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                 </div>
             </div>
