@@ -1,5 +1,5 @@
 {% set title = 'Our Services' %}
-{% set ourServicesPage = true %}
+{% set activePage = 'ourServicesPage' %}
 
 {% extends 'layouts/default.njk' %}
 {% import "macro/macro.njk" as Macro %}
@@ -50,11 +50,46 @@
                         'service11.png',
                         'Aqua Nettoyage',
                         'L’aquanettoyage (autrement nettoyage à l’eau, Wet cleaning ou Aquacleaning) permet de nettoyer tout type de textiles sans émettre de produits polluants, ce sur même les textiles les plus fragiles. Cette technique a été mise au point il y a déjà plus de 35 ans par les grands industriels du lavage textile.
-<br/><br/>A l’heure où le réchauffement climatique n’est plus un mythe et contrairement au nettoyage à sec, l’aquanettoyage est donc un procédé de nettoyage à l’eau utilisant des machines spécifiques et performantes qui permettent un lavage éco-responsable et économique. En effet, une machine de nettoyage à sec peut utiliser plusieurs centaines de litres d’eau tandis que l’aquanettoyage ne consomme que très peu de litres d’eau.'
-                    ) }}
+<br/><br/>A l’heure où le réchauffement climatique n’est plus un mythe et contrairement au nettoyage à sec, l’aquanettoyage est donc un procédé de nettoyage à l’eau utilisant des machines spécifiques et performantes qui permettent un lavage éco-responsable et économique. En effet, une machine de nettoyage à sec peut utiliser plusieurs centaines de litres d’eau tandis que l’aquanettoyage ne consomme que très peu de litres d’eau.',
+                        customClassText='addReadMore showlesscontent') }}
                 </div>
 
             </div>
         </div>
     </section>
+
+    <script>
+        function AddReadMore() {
+            //This limit you can set after how much characters you want to show Read More.
+            var carLmt = 280;
+            // Text to show when text is collapsed
+            var readMoreTxt = " ... Read More";
+            // Text to show when text is expanded
+            var readLessTxt = " Read Less";
+
+
+            //Traverse all selectors with this class and manupulate HTML part to show Read More
+            $(".addReadMore").each(function() {
+                if ($(this).find(".firstSec").length)
+                    return;
+
+                var allstr = $(this).text();
+                if (allstr.length > carLmt) {
+                    var firstSet = allstr.substring(0, carLmt);
+                    var secdHalf = allstr.substring(carLmt, allstr.length);
+                    var strtoadd = firstSet + "<span class='SecSec'>" + secdHalf + "</span><span class='readMore'  title='Click to Show More'>" + readMoreTxt + "</span><span class='readLess' title='Click to Show Less'>" + readLessTxt + "</span>";
+                    $(this).html(strtoadd);
+                }
+
+            });
+            //Read More and Read Less Click Event binding
+            $(document).on("click", ".readMore,.readLess", function() {
+                $(this).closest(".addReadMore").toggleClass("showlesscontent showmorecontent");
+            });
+        }
+        $(function() {
+            //Calling function after Page Load
+            AddReadMore();
+        });
+    </script>
 {% endblock %}

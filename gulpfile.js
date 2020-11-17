@@ -133,7 +133,7 @@ const pluginConfig = {
             },
             info: {
                 siteName: 'Point Pressing',
-                sitePhone: '2 582 96 29',
+                sitePhone: '02 582 96 29',
                 siteEmail: 'info@pointpressing.be',
                 siteHours: 'Mardi et Vendredi: 8:00 AM - 2:00 PM',
                 siteAddress: 'Rue de Livourne 9, 1060 Saint-Gilles, Belgium'

@@ -126,13 +126,13 @@
 # Image Info Block                                                                                                              *
 ###########################################################################}
 
-{% macro imgInfoBlock(customClass = '', img, title, text) %}
+{% macro imgInfoBlock(customClass = '', img, title, text, customClassText='') %}
 <div class="img-info-block {{ customClass }}">
     <div class="img"><img src="./static/media/{{ img }}" alt=""></div>
     <h4>
         {{ title }}
     </h4>
-    <p class="text-center">{{ text | safe }}</p>
+    <p class="text-center {{ customClassText }}">{{ text | safe }}</p>
 </div>
 {% endmacro %}
 

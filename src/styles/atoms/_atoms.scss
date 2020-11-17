@@ -9,7 +9,7 @@
 }
 
 /***************************************************************************                                                            *
- * Logo                                                                                                               *
+ * link                                                                                                               *
  ***************************************************************************/
 
 a {
@@ -54,6 +54,17 @@ a {
     &:hover {
       color: $primary-color;
       background: $white-color;
+    }
+  }
+
+  &--green-bordered {
+    background: none;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+
+    &:hover {
+      color: $white-color;
+      background: $primary-color;
     }
   }
 
@@ -132,7 +143,7 @@ h6.subtitle {
   }
 
   &--dark {
-    background: rgba($black-color, 0.5);
+    background: rgba(#414141, 0.65);
   }
 }
 
@@ -277,5 +288,31 @@ h6.subtitle {
   font-size: 40px;
   margin: 0 0 50px;
   color: $title-color;
+}
+
+/***************************************************************************                                                            *
+ * Read More Expand
+ ***************************************************************************/
+
+.addReadMore.showlesscontent .SecSec,
+.addReadMore.showlesscontent .readLess {
+  display: none;
+}
+
+.addReadMore.showmorecontent .readMore {
+  display: none;
+}
+
+.addReadMore .readMore,
+.addReadMore .readLess {
+  font-weight: bold;
+  margin-left: 2px;
+  color: $primary-color;
+  cursor: pointer;
+}
+
+.addReadMoreWrapTxt.showmorecontent .SecSec,
+.addReadMoreWrapTxt.showmorecontent .readLess {
+  display: block;
 }
 

@@ -7,7 +7,7 @@
 }
 
 /***************************************************************************                                                            *
- * Logo                                                                                                               *
+ * link                                                                                                               *
  ***************************************************************************/
 a {
   color: #00A8A2;
@@ -63,6 +63,17 @@ a:hover {
 .button--white-bordered:hover {
   color: #00A8A2;
   background: #ffffff;
+}
+
+.button--green-bordered {
+  background: none;
+  border: 1px solid #00A8A2;
+  color: #00A8A2;
+}
+
+.button--green-bordered:hover {
+  color: #ffffff;
+  background: #00A8A2;
 }
 
 .button--lg {
@@ -144,7 +155,7 @@ h6.subtitle {
 }
 
 .overlay--dark {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(65, 65, 65, 0.65);
 }
 
 /***************************************************************************                                                            *
@@ -287,8 +298,37 @@ h6.subtitle {
 }
 
 /***************************************************************************                                                            *
+ * Read More Expand
+ ***************************************************************************/
+.addReadMore.showlesscontent .SecSec,
+.addReadMore.showlesscontent .readLess {
+  display: none;
+}
+
+.addReadMore.showmorecontent .readMore {
+  display: none;
+}
+
+.addReadMore .readMore,
+.addReadMore .readLess {
+  font-weight: bold;
+  margin-left: 2px;
+  color: #00A8A2;
+  cursor: pointer;
+}
+
+.addReadMoreWrapTxt.showmorecontent .SecSec,
+.addReadMoreWrapTxt.showmorecontent .readLess {
+  display: block;
+}
+
+/***************************************************************************                                                            *
  * Navigation                                                                                                               *
  ***************************************************************************/
+body.modal-open .mm-ocd {
+  z-index: inherit;
+}
+
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -299,6 +339,16 @@ nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+nav ul .button, nav ul .mm-spn a.button, .mm-spn nav ul a.button {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  nav ul .button, nav ul .mm-spn a.button, .mm-spn nav ul a.button {
+    width: 100%;
+  }
 }
 
 nav ul a {
@@ -1208,7 +1258,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  background: url(../media/young-lady-with-a-phone.jpg) right center no-repeat;
+  background: url(../media/young-lady-with-a-phone.jpg) right top no-repeat;
   background-size: cover;
 }
 

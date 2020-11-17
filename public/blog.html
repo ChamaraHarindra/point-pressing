@@ -27,24 +27,35 @@
 
 
 <header>
-    <section class="header-top-stripe">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                We are open Tuesdays & Fridays 8am - 2pm
-            </div>
-            <div class="col-md-6">
-                <div class="d-flex align-items-center">
-                    2 582 96 29
-                    <a href="#" data-toggle="modal" data-target="#login">
-                        <i class="ri-user-line"></i>
-                        Login
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
+    <section class="header-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header-bottom__inner">
+                        <div class="logo">
+    <img src="/static/media/logo.png" alt="">
+</div>                        <a href="#headerNav" class="mobile-menu-trigger d-md-none">
+                            <i class="ri-menu-4-fill"></i>
+                        </a>
+                        
+<nav class="header-nav" id="headerNav">
+    <ul>
+            <li><a href="./" class="">A Propos</a></li>
+
+            <li><a href="our-services.html" class="">Services</a></li>
+
+            <li><a href="blog.html" class="">Blog</a></li>
+
+            <li><a href="contact.html" class="">Contact</a></li>
+
+            <li><a href="shop.html" class="button button--primary py-2">Shop</a></li>
+
+        <button class="button button--green-bordered mt-md-0 mt-3 py-2 mr-0" data-toggle="modal" data-target="#login">Login</button>
+    </ul>
+</nav>
+
+
 <div class="modal fade custom-modal" id="login" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -115,31 +126,7 @@
             $(this).closest('#login').show();
         })
     </script>
-</div>
-    <section class="header-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="header-bottom__inner">
-                        <div class="logo">
-    <img src="/static/media/logo.png" alt="">
-</div>                        <a href="#headerNav" class="mobile-menu-trigger d-md-none">
-                            <i class="ri-menu-4-fill"></i>
-                        </a>
-                        <nav class="header-nav" id="headerNav">
-    <ul>
-            <li><a href="./" class="">A Propos</a></li>
-
-            <li><a href="our-services.html" class="">Services</a></li>
-
-            <li><a href="blog.html" class="">Blog</a></li>
-
-            <li><a href="contact.html" class="">Contact</a></li>
-
-            <li><a href="shop.html" class="button button--primary py-2 mr-0">Shop</a></li>
-
-    </ul>
-</nav>                    </div>
+</div>                    </div>
                 </div>
             </div>
         </div>
@@ -281,7 +268,7 @@
                     <h3>Nous contacter</h3>
                     <div class="phone-highlighted">
                         <i class="ri-phone-fill"></i>
-                        <a href="tel:2 582 96 29">2 582 96 29</a>
+                        <a href="tel:02 582 96 29">02 582 96 29</a>
                     </div>
                     <div class="footer-info">
                         <i class="ri-map-pin-2-fill"></i>

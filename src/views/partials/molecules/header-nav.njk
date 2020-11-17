@@ -1,10 +1,85 @@
 {% import "macro/macro.njk" as Macro %}
+
 <nav class="header-nav" id="headerNav">
     <ul>
         {{ Macro.navLink('./', 'A Propos') }}
         {{ Macro.navLink('our-services.html', 'Services') }}
         {{ Macro.navLink('blog.html', 'Blog') }}
         {{ Macro.navLink('contact.html', 'Contact') }}
-        {{ Macro.navLink('shop.html', 'Shop', 'button button--primary py-2 mr-0') }}
+        {{ Macro.navLink('shop.html', 'Shop', 'button button--primary py-2') }}
+        <button class="button button--green-bordered mt-md-0 mt-3 py-2 mr-0" data-toggle="modal" data-target="#login">Login</button>
     </ul>
 </nav>
+
+{#Login Modal#}
+<div class="modal fade custom-modal" id="login" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                {#                    <h5 class="modal-title" id="{{ label }}">{{ title }}</h5>#}
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div id="login">
+                                <div class="modal-center-title">Login</div>
+                                <form action="" >
+                                    <div class="field-wrapper">
+                                        <label for="email" class="">Username</label>
+                                        <input type="email" placeholder="Username" name="email" required="required"
+                                               class="form-control">
+                                    </div>
+                                    <div class="field-wrapper">
+                                        <label for="password" class="">Password</label>
+                                        <input type="password" placeholder="Password" name="email" required="required"
+                                               class="form-control">
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <button class="button button--primary button--lg">
+                                            Login
+                                        </button>
+                                        <a href="#" id="forgotLink">Forgot password</a>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="forgotPw" style="display:  none">
+                                <div class="modal-center-title">Forgot Password?</div>
+                                <form action="">
+                                    <p class="text-center">Type in your email to receive a reset password link</p>
+                                    <div class="field-wrapper">
+                                        <label for="email" class="">Your Email</label>
+                                        <input type="email" placeholder="Username" name="email" required="required"
+                                               class="form-control">
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <button class="button button--primary button--lg">
+                                            Send Reset Link
+                                        </button>
+                                        <a href="#" id="back">Back to Login</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('#login').on('click',' #forgotLink', function() {
+            $(this).closest('#login').hide();
+            $('#forgotPw').addClass('d-block');
+
+        })
+
+        $('#back').on('click', function() {
+            $('#forgotPw').removeClass('d-block');
+            $(this).closest('#login').show();
+        })
+    </script>
+</div>

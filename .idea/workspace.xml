@@ -6,70 +6,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2cc80fe0-fae5-4ded-ab77-bf78108d1712" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/views/pages/price-list.njk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/our-services.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/our-services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/price-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/price-list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/shop.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/media/excellent-result.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/media/excellent-result.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/media/fast-delivery.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/media/fast-delivery.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/media/how-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/media/how-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/media/how-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/media/how-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/media/how-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/media/how-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/media/how-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/media/how-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/media/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/media/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/media/markerpng.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/media/markerpng.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/media/product-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/media/product-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/media/product-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/media/product-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/media/product-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/media/product-3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/media/product-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/media/product-4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/media/product-5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/media/product-5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/media/product-6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/media/product-6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/media/product-7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/media/product-7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/media/product-8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/media/product-8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/media/product-9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/media/product-9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/media/professional-service.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/media/professional-service.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/media/service-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/media/service-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/media/service-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/media/service-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/media/service-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/media/service-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/media/shirt-service.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/media/shirt-service.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/media/slider-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/media/slider-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/media/user.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/media/user.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/media/young-lady-with-a-phone.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/media/young-lady-with-a-phone.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/static/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/styles/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/static/styles/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/styles/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/excellent-result.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/excellent-result.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/fast-delivery.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/fast-delivery.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/how-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/how-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/how-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/how-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/how-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/how-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/how-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/how-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/markerpng.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/markerpng.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/product-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/product-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/product-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/product-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/product-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/product-3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/product-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/product-4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/product-5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/product-5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/product-6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/product-6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/product-7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/product-7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/product-8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/product-8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/product-9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/product-9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/professional-service.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/professional-service.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/service-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/service-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/service-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/service-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/service-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/service-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/shirt-service.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/shirt-service.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/slider-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/slider-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/user.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/user.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/media/young-lady-with-a-phone.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/young-lady-with-a-phone.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/atoms/_atoms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/atoms/_atoms.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/molecules/_molecules.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/molecules/_molecules.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/organisms/_organisms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/organisms/_organisms.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/layouts/default.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/layouts/default.njk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/macro/macro.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/macro/macro.njk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/pages/blog.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/blog.njk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/pages/contact.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/contact.njk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/pages/index.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/index.njk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/pages/our-services.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/our-services.njk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/pages/price-list.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/price-list.njk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/pages/shop.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/shop.njk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/molecules/header-nav.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/molecules/header-nav.njk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/organisms/header-top-stripe.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/organisms/header-top-stripe.njk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/organisms/header.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/organisms/header.njk" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +72,8 @@
       <updated>1605384791712</updated>
       <workItem from="1605384792904" duration="7593000" />
       <workItem from="1605431970727" duration="34645000" />
-      <workItem from="1605522473213" duration="9365000" />
+      <workItem from="1605522473213" duration="9653000" />
+      <workItem from="1605595847005" duration="10460000" />
     </task>
     <servers />
   </component>
@@ -126,6 +90,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="86" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605442584514">
